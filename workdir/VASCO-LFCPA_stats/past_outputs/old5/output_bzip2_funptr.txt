@@ -1,0 +1,193 @@
+++ realpath ../mde
++ MDE_SOURCE=__REDACTED__/export/workdir/mde
+++ pwd
++ PROJECT_ROOT=__REDACTED__/export/workdir/lfcpa
++ cd __REDACTED__/export/workdir/mde
++ mkdir -p build
++ cd build
++ rm -rf CMakeCache.txt CMakeFiles cmake_install.cmake install_manifest.txt mdeConfig.cmake mdeTargetsVersion.cmake Makefile
++ cmake .. -DENABLE_EXAMPLES=0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: __REDACTED__/export/workdir/mde/build
++ make -j4
++ make install
+Install the project...
+-- Install configuration: ""
+-- Up-to-date: /usr/local/include/mde/mde.hpp
+-- Up-to-date: /usr/local/include/mde/mde_config.hpp
+-- Up-to-date: /usr/local/include/mde/profiling.hpp
+-- Installing: /usr/local/lib/cmake/mde/mdeConfig.cmake
+-- Up-to-date: /usr/local/lib/cmake/mde/mdeConfig.cmake
+-- Installing: /usr/local/lib/cmake/mde/mdeTargetsVersion.cmake
++ cd __REDACTED__/export/workdir/lfcpa/SLIM
++ mkdir -p build
++ cd build
++ rm -rf CMakeCache.txt CMakeFiles cmake_install.cmake install_manifest.txt libmergeExit.so libslimPass.so libslim.so Makefile
++ cmake .. -DDISABLE_IGNORE_EFFECT=1
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test HAVE_FFI_CALL
+-- Performing Test HAVE_FFI_CALL - Success
+-- Found FFI: /usr/lib/x86_64-linux-gnu/libffi.so
+-- Performing Test Terminfo_LINKABLE
+-- Performing Test Terminfo_LINKABLE - Success
+-- Found Terminfo: /usr/lib/x86_64-linux-gnu/libtinfo.so
+-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11")
+-- Found LibXml2: /usr/lib/x86_64-linux-gnu/libxml2.so (found version "2.9.13")
+-- Configuring done (0.9s)
+-- Generating done (0.0s)
+-- Build files have been written to: __REDACTED__/export/workdir/lfcpa/SLIM/build
++ make -j4
+[ 11%] Building CXX object CMakeFiles/slimPass.dir/Passes/GlobalInit.cpp.o
+[ 33%] Building CXX object CMakeFiles/slim.dir/Instructions.cpp.o
+[ 33%] Building CXX object CMakeFiles/slim.dir/IR.cpp.o
+[ 44%] Building CXX object CMakeFiles/mergeExit.dir/Passes/MergeExit.cpp.o
+[ 55%] Building CXX object CMakeFiles/slim.dir/Operand.cpp.o
+[ 66%] Linking CXX shared library libmergeExit.so
+[ 77%] Linking CXX shared library libslimPass.so
+[ 77%] Built target mergeExit
+[ 88%] Building CXX object CMakeFiles/slim.dir/SLIMDebug.cpp.o
+[ 88%] Built target slimPass
+[100%] Linking CXX shared library libslim.so
+[100%] Built target slim
++ make install
+[ 55%] Built target slim
+[ 77%] Built target slimPass
+[100%] Built target mergeExit
+Install the project...
+-- Install configuration: ""
+-- Installing: /usr/local/lib/libslim.so
+-- Set non-toolchain portion of runtime path of "/usr/local/lib/libslim.so" to ""
+-- Up-to-date: /usr/local/include/slim
+-- Up-to-date: /usr/local/include/slim/Operand_4Aug24.h
+-- Up-to-date: /usr/local/include/slim/IR-merged.h
+-- Up-to-date: /usr/local/include/slim/SLIMDebug.h
+-- Up-to-date: /usr/local/include/slim/Instructions.h
+-- Up-to-date: /usr/local/include/slim/Operand.h
+-- Up-to-date: /usr/local/include/slim/IR.h
+-- Up-to-date: /usr/local/include/slim/Instructions-merged.h
++ cd __REDACTED__/export/workdir/lfcpa/VASCO-LFCPA
++ mkdir -p build
++ ./run.sh bzip2 --FUNPTR
+FUNPTR
+-DFUNPTR
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: __REDACTED__/export/workdir/lfcpa/VASCO-LFCPA/build
+[ 12%] Building CXX object CMakeFiles/iplfcpa.dir/include/TransitionGraph.cpp.o
+[ 25%] Building CXX object CMakeFiles/iplfcpa.dir/lfcpa.cpp.o
+[ 37%] Building CXX object CMakeFiles/iplfcpa.dir/FSSP_Kill.cpp.o
+[ 50%] Building CXX object CMakeFiles/iplfcpa.dir/FISP_Gen.cpp.o
+[ 62%] Building CXX object CMakeFiles/iplfcpa.dir/FISP_Def.cpp.o
+[ 75%] Building CXX object CMakeFiles/iplfcpa.dir/Profiling.cpp.o
+[ 87%] Building CXX object CMakeFiles/iplfcpa.dir/Common.cpp.o
+[100%] Linking CXX executable iplfcpa
+[100%] Built target iplfcpa
+=======================Generate LL Files using CLANG=======================
+==============================Running Analysis================================
+
+
+Inside CONSTRUCTOR with slim as: 1
+Inside CONSTRUCTOR with slim as: 1
+
+Populating CallGraph START
+
+Populating CallGraph END
+
+ In doAnalysis 3....
+
+@@@@ OPERATION COUNT: 70564179
+@@@@ EQUALITY COMPARISONS: 15118877
+@@@@ ENUMERATION LIVENESS: 79914516
+@@@@ ENUMERATION POINTSTO: 8066399
+@@@@ CONSTRUCTION LIVENESS: 79914516
+@@@@ CONSTRUCTION POINTSTO: 8066399
+@@@@ ASSIGNMENT LIVENESS: 15378
+@@@@ ASSIGNMENT POINTSTO: 0
+Performance Profile: 
+differences
+      Hits       : 1352336
+      Equal Hits : 6182
+      Subset Hits: 0
+      Empty Hits : 2055
+      Cold Misses: 5083
+      Edge Misses: 263537
+
+unions
+      Hits       : 2181931
+      Equal Hits : 2886025
+      Subset Hits: 1159138
+      Empty Hits : 1115479
+      Cold Misses: 73841
+      Edge Misses: 20160
+
+property_sets
+      Hits       : 7600856
+      Equal Hits : 0
+      Subset Hits: 0
+      Empty Hits : 0
+      Cold Misses: 90198
+      Edge Misses: 0
+
+
+Profiler Statistics:
+    'register_set': 332.007 ms
+    'register_set_single': 3141.93 ms
+    'set_difference': 1743.35 ms
+    'set_union': 2290.57 ms
+    'store_subset': 130.768 ms
+
+Performance Profile: 
+unions
+      Hits       : 1485599
+      Equal Hits : 1427142
+      Subset Hits: 1171181
+      Empty Hits : 838297
+      Cold Misses: 22107
+      Edge Misses: 234152
+
+property_sets
+      Hits       : 44725761
+      Equal Hits : 0
+      Subset Hits: 0
+      Empty Hits : 0
+      Cold Misses: 634280
+      Edge Misses: 0
+
+
+Profiler Statistics:
+    'register_set': 108448 ms
+    'register_set_single': 699.318 ms
+    'set_union': 2754.7 ms
+    'store_subset': 129.702 ms
+
+
+
+Total time taken in Analysis: 1376833 milliseconds
+
+Total time taken for Backwards Analysis: 297453 milliseconds
+
+Total time taken for Forwards Analysis: 1079353 milliseconds
+
+Wallclock Time: 1378.45, Max RSS (KB): 787476
+
+
+==============================Analysis Over================================
++ set +x

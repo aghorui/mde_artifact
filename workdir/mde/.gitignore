@@ -1,0 +1,10 @@
+**/*.o
+**/*.old
+mde_test_benchmark_persistent
+mde_test_benchmark
+mde_test
+doc_generated/*
+problem_cases/*
+scratch_files/*
+build/*
+.cache/*

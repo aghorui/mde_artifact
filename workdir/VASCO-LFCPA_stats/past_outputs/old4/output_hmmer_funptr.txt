@@ -1,0 +1,251 @@
+++ realpath ../mde
++ MDE_SOURCE=__REDACTED__/export/workdir/mde
+++ pwd
++ PROJECT_ROOT=__REDACTED__/export/workdir/lfcpa
++ cd __REDACTED__/export/workdir/mde
++ mkdir -p build
++ cd build
++ rm -rf CMakeCache.txt CMakeFiles cmake_install.cmake install_manifest.txt mdeConfig.cmake mdeTargetsVersion.cmake Makefile
++ cmake .. -DENABLE_EXAMPLES=0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: __REDACTED__/export/workdir/mde/build
++ make -j4
++ make install
+Install the project...
+-- Install configuration: ""
+-- Up-to-date: /usr/local/include/mde/mde.hpp
+-- Up-to-date: /usr/local/include/mde/mde_config.hpp
+-- Up-to-date: /usr/local/include/mde/profiling.hpp
+-- Installing: /usr/local/lib/cmake/mde/mdeConfig.cmake
+-- Up-to-date: /usr/local/lib/cmake/mde/mdeConfig.cmake
+-- Installing: /usr/local/lib/cmake/mde/mdeTargetsVersion.cmake
++ cd __REDACTED__/export/workdir/lfcpa/SLIM
++ mkdir -p build
++ cd build
++ rm -rf CMakeCache.txt CMakeFiles cmake_install.cmake install_manifest.txt libmergeExit.so libslimPass.so libslim.so Makefile
++ cmake .. -DDISABLE_IGNORE_EFFECT=1
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test HAVE_FFI_CALL
+-- Performing Test HAVE_FFI_CALL - Success
+-- Found FFI: /usr/lib/x86_64-linux-gnu/libffi.so
+-- Performing Test Terminfo_LINKABLE
+-- Performing Test Terminfo_LINKABLE - Success
+-- Found Terminfo: /usr/lib/x86_64-linux-gnu/libtinfo.so
+-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11")
+-- Found LibXml2: /usr/lib/x86_64-linux-gnu/libxml2.so (found version "2.9.13")
+-- Configuring done (0.8s)
+-- Generating done (0.0s)
+-- Build files have been written to: __REDACTED__/export/workdir/lfcpa/SLIM/build
++ make -j4
+[ 11%] Building CXX object CMakeFiles/slim.dir/IR.cpp.o
+[ 22%] Building CXX object CMakeFiles/mergeExit.dir/Passes/MergeExit.cpp.o
+[ 33%] Building CXX object CMakeFiles/slim.dir/Instructions.cpp.o
+[ 44%] Building CXX object CMakeFiles/slimPass.dir/Passes/GlobalInit.cpp.o
+[ 55%] Building CXX object CMakeFiles/slim.dir/Operand.cpp.o
+[ 66%] Linking CXX shared library libmergeExit.so
+[ 66%] Built target mergeExit
+[ 77%] Building CXX object CMakeFiles/slim.dir/SLIMDebug.cpp.o
+[ 88%] Linking CXX shared library libslimPass.so
+[ 88%] Built target slimPass
+[100%] Linking CXX shared library libslim.so
+[100%] Built target slim
++ make install
+[ 55%] Built target slim
+[ 77%] Built target slimPass
+[100%] Built target mergeExit
+Install the project...
+-- Install configuration: ""
+-- Installing: /usr/local/lib/libslim.so
+-- Set non-toolchain portion of runtime path of "/usr/local/lib/libslim.so" to ""
+-- Up-to-date: /usr/local/include/slim
+-- Up-to-date: /usr/local/include/slim/Operand_4Aug24.h
+-- Up-to-date: /usr/local/include/slim/IR-merged.h
+-- Up-to-date: /usr/local/include/slim/SLIMDebug.h
+-- Up-to-date: /usr/local/include/slim/Instructions.h
+-- Up-to-date: /usr/local/include/slim/Operand.h
+-- Up-to-date: /usr/local/include/slim/IR.h
+-- Up-to-date: /usr/local/include/slim/Instructions-merged.h
++ cd __REDACTED__/export/workdir/lfcpa/VASCO-LFCPA
++ mkdir -p build
++ ./run.sh hmmer --FUNPTR
+FUNPTR
+-DFUNPTR
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: __REDACTED__/export/workdir/lfcpa/VASCO-LFCPA/build
+[ 12%] Building CXX object CMakeFiles/iplfcpa.dir/include/TransitionGraph.cpp.o
+[ 25%] Building CXX object CMakeFiles/iplfcpa.dir/lfcpa.cpp.o
+[ 37%] Building CXX object CMakeFiles/iplfcpa.dir/FSSP_Kill.cpp.o
+[ 50%] Building CXX object CMakeFiles/iplfcpa.dir/FISP_Gen.cpp.o
+[ 62%] Building CXX object CMakeFiles/iplfcpa.dir/FISP_Def.cpp.o
+[ 75%] Building CXX object CMakeFiles/iplfcpa.dir/Profiling.cpp.o
+[ 87%] Building CXX object CMakeFiles/iplfcpa.dir/Common.cpp.o
+[100%] Linking CXX executable iplfcpa
+[100%] Built target iplfcpa
+=======================Generate LL Files using CLANG=======================
+==============================Running Analysis================================
+
+
+Inside CONSTRUCTOR with slim as: 1
+Inside CONSTRUCTOR with slim as: 1
+
+Populating CallGraph START
+
+Populating CallGraph END
+
+ In doAnalysis 3....
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+
+@@@@ OPERATION COUNT: 412848119
+@@@@ EQUALITY COMPARISONS: 298262709
+@@@@ ENUMERATION LIVENESS: 220362132
+@@@@ ENUMERATION POINTSTO: 26019475
+@@@@ CONSTRUCTION LIVENESS: 220362132
+@@@@ CONSTRUCTION POINTSTO: 26019475
+@@@@ ASSIGNMENT LIVENESS: 144979
+@@@@ ASSIGNMENT POINTSTO: 0
+Performance Profile: 
+differences
+      Hits       : 3056184
+      Equal Hits : 67985
+      Subset Hits: 0
+      Empty Hits : 3639
+      Cold Misses: 44179
+      Edge Misses: 488498
+
+unions
+      Hits       : 16436016
+      Equal Hits : 4154869
+      Subset Hits: 1673443
+      Empty Hits : 4055428
+      Cold Misses: 430533
+      Edge Misses: 137957
+
+property_sets
+      Hits       : 32168575
+      Equal Hits : 0
+      Subset Hits: 0
+      Empty Hits : 0
+      Cold Misses: 490665
+      Edge Misses: 0
+
+
+Profiler Statistics:
+    'register_set': 3462.94 ms
+    'register_set_single': 14224.8 ms
+    'set_difference': 3347.87 ms
+    'set_union': 14052.3 ms
+    'store_subset': 755.934 ms
+
+Performance Profile: 
+unions
+      Hits       : 5803192
+      Equal Hits : 4763364
+      Subset Hits: 3148173
+      Empty Hits : 3077323
+      Cold Misses: 91472
+      Edge Misses: 451371
+
+property_sets
+      Hits       : 74774891
+      Equal Hits : 0
+      Subset Hits: 0
+      Empty Hits : 0
+      Cold Misses: 1077776
+      Edge Misses: 0
+
+
+Profiler Statistics:
+    'register_set': 122338 ms
+    'register_set_single': 3682.43 ms
+    'set_union': 8938.54 ms
+    'store_subset': 561.507 ms
+
+
+
+Total time taken in Analysis: 5410243 milliseconds
+
+Total time taken for Backwards Analysis: 2185368 milliseconds
+
+Total time taken for Forwards Analysis: 3224780 milliseconds
+
+Wallclock Time: 5416.28, Max RSS (KB): 2653060
+
+
+==============================Analysis Over================================
++ set +x
